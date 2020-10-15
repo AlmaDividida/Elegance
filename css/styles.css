@@ -1,0 +1,306 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 1.4rem;
+    font-family: 'Raleway', sans-serif;
+    color: #373737;
+    background-color: #f9f9f9;
+    line-height: 2;
+}
+
+/*  GLOBALES   */
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 2.8rem;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.6rem;
+}
+
+a {
+    text-decoration: none;
+    color: #373737;
+}
+
+/*  UTILITIES   */
+.container{
+    max-width: 120rem;
+    margin: auto;
+}
+
+.section {
+    margin-top: 10rem;
+}
+
+.center-text{
+    text-align: center;
+}
+
+.bleeding{
+    padding-left: 8rem;
+}
+
+.no-margin{
+    margin: 0;
+}
+
+.fw-light{
+    font-weight: 300;
+}
+
+.fs-ban{
+    margin: 0;
+    font-size: 15rem;
+}
+
+.lh-1{
+    line-height: 1.2;
+}
+
+.btn {
+    color: #373737;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    display: inline-block;
+    line-height: 1;
+    border: none;
+}
+
+.btn-search {
+    border: none;
+    padding: 0 2rem;
+}
+
+.btn-primary{
+    background-color: #ffb800;
+    color: #373737;
+}
+
+.btn-secundary{
+    color: #373737;
+    border: solid 1px #ececec;
+    border-radius: 0.4rem;
+    background-color: #f9f9f9;
+}
+
+.color-primary{
+    color: #ffb800;
+}
+
+.color-secundary{
+    color: #a4a4a4;
+}
+
+.icon{
+    color: #f9f9f9;
+    text-decoration: none;
+}
+
+/*  AD  */
+.ad{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4rem;
+    align-items: center;
+}
+
+/* DECK CARD FOR 4 ARTICLES */
+.products-card-4{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.product-4{
+    flex-basis: calc(25% - 2rem);
+}
+
+.product-4-text{
+    padding: 1rem 2rem;
+    text-align: justify;
+}
+.product-4-h{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.box-shape{
+    background-color: white;
+    box-shadow: #a4a4a4 2px 2px 8px;
+}
+.d-flex{
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-controls{
+    padding: 4rem 0;
+}
+
+/* DECK CARD FOR 3 ARTICLES */
+
+.products-card-3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-3{
+    flex-basis: calc(33.3% - 4rem);
+    background-color: #f0f0f0;
+    padding: 2rem;
+}
+
+/*  HEADER   */
+
+.site-header{
+    background-color: #111111;
+    color: #f9f9f9;
+}
+
+.logo {
+    color: #f9f9f9;
+    text-decoration: none;
+}
+
+.hydra-header{
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-head, .right-head{
+    flex-basis: 18%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.middle-head{
+    flex-basis: 40%;
+    display: flex;
+    font-weight: 600;
+}
+
+.search-inp{
+    padding: .5rem 3rem;
+    width: 100%;
+    border: none;
+    background-color: #f9f9f9;
+    color: #a4a4a4;
+}
+
+/*  BANNER  */
+
+.banner-princ{
+    height: 60vh;
+    background-image: url("../img/banner-1.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.banner-2{
+    height: 60vh;
+    background-image: url("../img/banner-2.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.banner-3{
+    height: 70vh;
+    background-image: url("../img/banner-3.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.banner-text{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #f9f9f9;
+}
+
+/*  FOOTER  */
+.site-footer{
+    background-color: #373737;
+    
+}
+.text-footer{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    color: #a4a4a4;
+    font-size: 1.3rem;
+    gap: 4rem;
+}
+
+.bold-w{
+    color: #f9f9f9;
+    font-weight: 800;
+}
+
+.text-footer ul{
+    list-style: none;
+    padding: 0;
+}
+
+.text-footer a{
+    color: #a4a4a4;
+}
+
+.subscribe{
+    grid-column: 5 / 7;
+}
+
+.sub-email{
+    margin: 2rem 0;
+    display: flex;
+}
+
+.sub-input {
+    padding: .2rem 3rem;
+    width: 100%;
+    border: solid 1px #a4a4a4;
+    background-color: #373737;
+    color: #a4a4a4;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-icons a{
+    font-size: 2rem;
+    color: #f9f9f9;
+}
+
+.app-links{
+    margin-top: 3rem;
+}
+
